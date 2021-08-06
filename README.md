@@ -14,16 +14,27 @@ Circuit identity for faster reversible nearest-neighbour circular shift with CNO
 ![Circuit patterns image](./patterns.png)
 
 # Code Implementation
-The tReduced.py program includes a function tReduced which will add the
+The tReduced.py program includes a function t_reduced which will add the
 T-Reduced pattern to a qiskit QuantumCircuit along a given path of
-QuantumRegister.
+QuantumRegister's.
+Here is an example implementation of the t_reduced function:
+```
+from qiskit import QuantumCircuit, QuantumRegister
+from tReduced import t_reduced
+
+qubits = 8
+qr = QuantumRegister(qubits, name = "q")
+qc = QuantumCircuit(qr)
+
+t_reduced(qc, [0, 1, 2, 3, 4, 5, 6, 7])
+```
 
 # Acknowledgements
 This work was completed as part of my undergrad thesis. I would like to thank my
-professors Rajesh Pereira and Joe Sawada for their considerable contribution to
-this work.
+professors Rajesh Pereira and Joe Sawada for co-supervising my thesis and
+contributing to this work.
 
 # Notes
 I don't know if the C-Reduced, S-Reduced, or T-Reduced patterns are novel. If
 anyone knows of previous publications of these patterns please create an issue
-so they can be properly credited.
+so that they can be properly credited.

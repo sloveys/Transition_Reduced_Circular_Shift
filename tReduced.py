@@ -11,7 +11,7 @@ patterns provided here.
 """
 
 
-def _cxWalk(qc, path, up = False):
+def _cx_walk(qc, path, up = False):
     """
     Creates a series of CNOT gates along the path of qubits.
     qc: the QuantumCircuit object
@@ -29,7 +29,7 @@ def _cxWalk(qc, path, up = False):
     for i in range(len(path) - 1):
         qc.cx(path[i + upi], path[i + 1 - upi])
 
-def tReduced(qc, path, up = False, transitionQubit = None):
+def t_reduced(qc, path, up = False, transitionQubit = None):
     """
     Adds T-Reduced shift pattern to circuit along path. Completes circular shift
     with a depth of n + 6 and 4n - 2 CNOT gates for default values of
@@ -56,17 +56,17 @@ def tReduced(qc, path, up = False, transitionQubit = None):
     spath = list(reversed(path[transitionQubit + 1:])) # setup step path
 
     # setup step
-    _cxWalk(qc, spath, up = up)
+    _cx_walk(qc, spath, up = up)
 
     # begin C-Reduced transfer step
-    _cxWalk(qc, crpath, up = up)
+    _cx_walk(qc, crpath, up = up)
 
     # integrated transfer step
-    _cxWalk(qc, path, up = not up)
-    _cxWalk(qc, path, up = up)
+    _cx_walk(qc, path, up = not up)
+    _cx_walk(qc, path, up = up)
 
     # end S-Reduced transfer step
-    _cxWalk(qc, srpath, up = not up)
+    _cx_walk(qc, srpath, up = not up)
 
     # cleanup step
-    _cxwalk(qc, cpath, up = not up)
+    _cx_walk(qc, cpath, up = not up)
