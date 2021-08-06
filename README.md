@@ -17,6 +17,7 @@ Circuit identity for faster reversible nearest-neighbour circular shift with CNO
 The tReduced.py program includes a function t_reduced which will add the
 T-Reduced pattern to a qiskit QuantumCircuit along a given path of
 QuantumRegister's.
+
 Here is an example implementation of the t_reduced function:
 ```python
 from qiskit import QuantumCircuit, QuantumRegister
