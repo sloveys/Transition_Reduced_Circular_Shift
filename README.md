@@ -10,7 +10,7 @@
 Circuit identity for faster reversible nearest-neighbour circular shift with CNOT gates.
 
 # Circuit Identities
-![Image Title](./identities.pdf){width=90%}
+![Circuit identities image](./identities.png)
 
 # Code Implementation
 
