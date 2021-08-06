@@ -2,14 +2,15 @@
 
 ## Table of contents
 * [Description](#description)
-* [Identities](#identities)
+* [Circuit Identities](#circuit-dentities)
 * [Code Implementation](#code-implementation)
 * [Acknowledgements](#acknowledgements)
 
 # Description
 Circuit identity for faster reversible nearest-neighbour circular shift with CNOT gates.
 
-# Identities
+# Circuit Identities
+![Image Title](./identities.pdf){width=90%}
 
 # Code Implementation
 

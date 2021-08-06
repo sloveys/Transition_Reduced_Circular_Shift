@@ -29,8 +29,6 @@ def _cxWalk(qc, path, up = False):
     for i in range(len(path) - 1):
         qc.cx(path[i + upi], path[i + 1 - upi])
 
-
-
 def tReduced(qc, path, up = False, transitionQubit = None):
     """
     Adds T-Reduced shift pattern to circuit along path. Completes circular shift
