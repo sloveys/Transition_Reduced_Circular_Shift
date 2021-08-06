@@ -18,7 +18,7 @@ The tReduced.py program includes a function t_reduced which will add the
 T-Reduced pattern to a qiskit QuantumCircuit along a given path of
 QuantumRegister's.
 Here is an example implementation of the t_reduced function:
-```
+```python
 from qiskit import QuantumCircuit, QuantumRegister
 from tReduced import t_reduced
 
@@ -33,9 +33,10 @@ t_reduced(qc, [0, 1, 2, 3, 4, 5, 6, 7])
 This work was completed as part of my undergrad thesis. I would like to thank my
 professors Rajesh Pereira and Joe Sawada for co-supervising my thesis and
 contributing to this work.
-  We acknowledge the use of IBM Quantum services for this work. The views
+
+We acknowledge the use of IBM Quantum services for this work. The views
 expressed are those of the author, and do not reflect the official policy or
-position of IBM or the IBM Quantum team
+position of IBM or the IBM Quantum team.
 
 # Notes
 I don't know if the C-Reduced, S-Reduced, or T-Reduced patterns are novel. If
