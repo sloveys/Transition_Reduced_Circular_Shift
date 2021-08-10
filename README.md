@@ -1,13 +1,4 @@
 # Transition_Reduced_Circular_Shift
-
-## Table of contents
-* [Description](#description)
-* [Circuit Patterns](#circuit-patterns)
-* [Code Implementation](#code-implementation)
-* [Acknowledgements](#acknowledgements)
-* [Notes](#notes)
-
-# Description
 Circuit identity for faster reversible nearest-neighbour circular shift with CNOT gates.
 
 # Circuit Patterns
